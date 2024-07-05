@@ -19,23 +19,23 @@ async function checkWeather(city) {
   document.querySelector(".wind").innerHTML = data.wind.speed + "km/h";
 
   if (data.weather[0].main === "Clouds") {
-    weatherIcon.src = "images/clouds.png";
-    main.style.backgroundImage = "url('images/cloudyBackground.jpg')";
+    weatherIcon.src = "clouds.png";
+    main.style.backgroundImage = "url('cloudyBackground.jpg')";
   } else if (data.weather[0].main === "Clear") {
-    weatherIcon.src = "images/clear.png";
-    main.style.backgroundImage = "url('images/clearWeather.jpeg')";
+    weatherIcon.src = "clear.png";
+    main.style.backgroundImage = "url('clearWeather.jpeg')";
   } else if (data.weather[0].main === "Rain") {
-    weatherIcon.src = "images/rain.png";
-    main.style.backgroundImage = "url('images/rainyBackground.jpg')";
+    weatherIcon.src = "rain.png";
+    main.style.backgroundImage = "url('rainyBackground.jpg')";
   } else if (data.weather[0].main === "Drizzle") {
-    weatherIcon.src = "images/drizzle.png";
-    main.style.backgroundImage = "url('images/drizzleBackground.jpg')";
+    weatherIcon.src = "drizzle.png";
+    main.style.backgroundImage = "url('drizzleBackground.jpg')";
   } else if (data.weather[0].main === "Mist") {
-    weatherIcon.src = "images/mist.png";
-    main.style.backgroundImage = "url('images/mistBackground.jpg')";
+    weatherIcon.src = "mist.png";
+    main.style.backgroundImage = "url('mistBackground.jpg')";
   } else if (data.weather[0].main === "Snow") {
-    weatherIcon.src = "images/snow.png";
-    main.style.backgroundImage = "url('images/snowBackground.jpg')";
+    weatherIcon.src = "snow.png";
+    main.style.backgroundImage = "url('snowBackground.jpg')";
   }
   document.querySelector(".weather").style.display = "block";
 }
